@@ -1,0 +1,69 @@
+LISTAS
+Sirven para marcar listas de elementos ordenados, o no ordenados
+LISTAS NO ORDENADAS
+Etiqueta raíz <ul> (Unordered List)
+ELEMENTOS
+<li>  (List Item)
+
+Ejemplo:
+<p>Lista de la compra</p>   |   Se pinta como
+<ul>                        |   Lista de la compra
+    <li>Leche</li>          |   ·leche
+    <li>Galletas</li>       |   ·galletas
+    <li>chocolate</li>      |   ·chocolate
+</ul>                       |
+
+LISTAS ORDENADAS
+Los elementos tienen relación de orden.
+Etiqueta raíz: <ol> (Ordered List)
+ELEMENTOS
+<li> (List Item)
+
+Ejemplo:
+<p>Tareas</p>                       |   Se pinta como
+<ol>                                |   Tareas
+    <li>Cerrar programaciones</li>  |   1. Cerrar programaciones
+    <li>Preparar apuntes</li>       |   2. Preparar apuntes
+    <li>Cortar el césped</li>       |   3. Cortar el césped
+</ol>                               |
+
+PODEMOS:
+-Indicar el carácter o tipo que se emplee para la ordenación:
+
+<ol type="a">       |
+    <li>---</li>    |           a. ---
+    <li>---</li>    |   --->    b. ---
+    <li>---</li>    |           c. ---
+<ol>
+Opciones para el type: "a", "A", "i", "I"
+
+LISTAS ANIDADAS
+Podemos hacer listas de múltiples niveles, combinando <ol> y <ul>
+
+Ejemplo
+<p>Menú</p>
+<ol>
+    <li> Primeros
+        <ul>
+            <li>Sopa</li>
+            <li>Croquetas</li>
+        </ul>
+    </li>
+<ol>
+
+LISTAS DE DEFINICIÓN
+Asocian uno o más términos con una o más definiciones
+ESTRUCTURA
+raíz --> <dl> (Definition List)
+términos --> <dt> (Definition Term)
+definiciones --> <dd> (Definition Definition)
+
+<dl>
+    <dt>Árbol</dt>
+    <dd>Planta</dd>
+    <dd>Estructura de datos</dd>
+    <dt>Libreta</dt>
+    <dt>Cuaderno</dt>
+    <dd>Conjunto de hojas con los que se pueden tomar notas</dd>
+</dl>
+DEBERES UD01_T02 Listas I |Libreta y GitHub|
