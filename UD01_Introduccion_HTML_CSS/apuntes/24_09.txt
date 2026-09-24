@@ -1,0 +1,22 @@
+ENLACES
+· Un enlace o hipervinculo permite relacionar una página HTML con otra
+· <a href="">
+
+¿Que direcciones se pueden incluir en el atributo href?
+URI/URL
+· Anatomía de una URL:
+https://uvigo.es/fichero/info.pdf
+---https:// --> protocolo
+---uvigo.es --> nombre de la máquina
+---/fichero/info.pdf --> Ubicación del recurso
+
+·	Como emplear correctamente las direcciones URL en los enlaces de nuestras páginas HTML	·
+--> Si apuntamos a un recurso externo (algo que se encuentra en internet pero que no guardamos en nuestro equipo):
+	|Se usan rutas absolutas: Se deben incluir las 3 partes del URL(Protocolo, Nombre de máquina y Ubicación)|
+
+--> Si apuntamos a un recurso propio (una imagen que guardamos en una carpeta, un fichero JS o CSS, un fichero PDF, u otras páginas HTML NUESTRA)
+	|Usaremos rutas relativas|
+
+·	¿Que es una ruta relativa?	·
+
+	-	Una ruta relativa permite apuntar a un recurso desde la Ubicación en la que nos encontramos. no incluye protocolo ni nombre de máquina.
