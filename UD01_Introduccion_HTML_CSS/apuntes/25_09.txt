@@ -1,0 +1,42 @@
+RUTA RELATIVA
+¿Desde donde? ¿A donde?
+
+futbol.com
+|   premier
+|   |   resultados.html
+|   |   noticias.html
+|   laliga
+|   |   resultados.html
+|   |   noticias.html
+|   index.html
+
+futbol.com se guarda en |C:\usuarios\yo\futbol.com|
+
+Desde index.html: Quiero un enlace a los resultados de la premier
+<a href="premier\resultados.html">Resultados de la premier</a>
+
+--Para escribir rutas relativas omitimos de estas la parte del PATH hasta la carpeta del fichero que estamos editando--
+
+¿Qué pasa si el recurso al que quiero apuntar esta por encima de la carpeta en la que me encuentro?
+
+Desde premier\noticias.html: Quiero apuntar a index.html
+·      Empleamos el apuntador a directorio padre: ..\     ·
+<a href="..\index.html">Volver al inicio</a>
+
+¿Que pasa si el recurso al que quiero apuntar está en otra rama distinta a la mía en el alrbol de directorios?
+
+Desde premier\noticias.html: Quiero ir a laliga\resultados.html
+·      Subir con ..\ hasta la primera carpeta que contenga la rama por la que debo bajar       ·
+<a href="..\laliga\resultados.html">Resultados LaLiga BBVA</a>
+
+|----------------------------------------------------------|
+| REVISAR APUNTES USO DE ANCLAS DENTRO DE LA PROPIA PÁGINA |
+|----------------------------------------------------------|
+
+·   USO DE ANCLAS EN EL PROPIO DOCUMENTO   ·
+Son enlaces que apuntan a partes de ka misma página html
+Ejemplos:
+    <p>mucho mucho texto</p>
+    <p>texto <a href="#AlgoImportanteMasAbajo"> Haz click aquí que esto es importante </a> </p>
+    <p>mucho mucho texto</p>
+    <h1 id="AlgoImportanteMasAbajo">Enhorabuena</h1>
