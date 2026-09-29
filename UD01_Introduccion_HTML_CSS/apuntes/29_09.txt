@@ -1,0 +1,27 @@
+IMAGENES EN HTML
+
+Etiqueta <img src="RutaDeLaImagen" alt="txt" title"txt"/>
+Se usa ruta relativa a recursos locales y absoluta a recursos ajenos a nuestra red (Pirata)
+
+·Manipular el tamaño con los atributos height y width
+    - Si no se hace bien pierde la relación de aspecto
+
+PARA QUE SE USA LA ETIQUETA img
+    -Solo para fotografías o ilustraciones que aporten contenido a la página
+    -No debe emplpearse para añadir fondos, elementos de decoración o iconos
+
+REFERENCIAR FOTOGRAFÍAS O ILUSTRACIONES DESDE EL TEXTO DE LA PÁGINA
+
+"Como se puede ver en el gráfico de barras (1)"
+
+<figure id="">
+    <img src="url">
+    <figcaption> texto </figcaption> ----> Representa la imagen que quiero referenciar con su título. figcaption no añade estilos especiales solo marca el título
+</figure>
+
+MAPAS DE IMÁGENE
+Utilidad que permite definir areas enlazables sobre una imagen
+<map name="nombre">
+    <area shape="(circle, poly o rect)" cords=""/>
+</map>
+<img src="" usemap="#nombre"/>
