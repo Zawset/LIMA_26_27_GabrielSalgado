@@ -11,3 +11,9 @@ Los encabezados h1 a h6 definen la estructura del documento, pero además existe
 --------------------------------------------------------------------------------
 |Todos estos contenedores definen la estructura del documento, no su apariencia|
 --------------------------------------------------------------------------------
+
+· Tablas HTML ·
+Sirven para marcar información tabular. Pueden tener encabezado y pie.
+Se escriben por filas, y dentro de una fila, por columnas
+Las celdas (casillas) de una tabla pueden ser de 2 tipos: celda de datos o celda de encabezado
+Ver ejemplo de esqueleto en Github
