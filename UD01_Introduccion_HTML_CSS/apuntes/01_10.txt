@@ -1,0 +1,13 @@
+· ESTRUCTURA DE DOCUMENTO ·
+Todo el contenido (texto, listas, títulos, tablas, imágenes, etc.) de una página HTML debe seguir una estructura coherente.
+Los encabezados h1 a h6 definen la estructura del documento, pero además existen contenedores (etiquetas) especificas para agrupar contenido según su cometido en la página.
+<article> --> Agrupa contenido que representa un articulo.
+<section> --> Separa secciones de un artículo o agrupa artículos de una temática.
+<main> --> Representa el contenido principal de la página
+<aside> --> Representa contenido accesorio (Típicamente el que se muestra en los laterales de una página)
+<header> --> Representa el contenido de encabezado, puede ser de toda la página, de un artículo o de una sección
+<footer> --> Representa el pie de la página, artículo o sección
+<nav> --> Representa un conjunto de enlaces de navegación
+--------------------------------------------------------------------------------
+|Todos estos contenedores definen la estructura del documento, no su apariencia|
+--------------------------------------------------------------------------------
