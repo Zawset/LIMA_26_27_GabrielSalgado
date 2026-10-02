@@ -1,0 +1,9 @@
+· COMBINACIONES DE CELDAS EN TABLAS ·
+Las combinaciones de celda se realizan siempre desde la celda más a la 
+izquierda dentro de la misma fila, o desde la celda "de la fila más alta"
+si implica a varias filas
+
+- Para un conjunto de celdas cualquiera que esté combinado, solo incluímos en la tabla
+la celda superior izquierda indicando el número de posiciones que se expande en sentido
+horizontal hacia la derecha (colspan) y el número de posiciones que se expande la casilla
+hacia abajo (rowspan)
