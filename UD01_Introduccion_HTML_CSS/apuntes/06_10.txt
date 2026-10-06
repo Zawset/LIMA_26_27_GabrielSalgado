@@ -1,0 +1,29 @@
+·CSS·
+Cascade Style Sheet
+- Es el lenguaje utilizado para aplicar esstilos a las páginas HTML
+- CSS no es un lenguaje de marcas ni de etiquetas.
+
+El elemento básico de escritura en CSS son las Reglas.
+Una regla está formada por un selector y un conjunto de propiedades y valores.
+(DIBUJO EN LIBRETA)
+
+# Formas de vincular estilos a un documento HTML
+1.	La más recomendada: Estilos externos en un ficher .css independiente.
+	Se añade la etiqueta link en el head del documento
+    <link rel="stylesheet" type ="text/css" href="estilos.css"/>
+2.	Estilos internos: Se añade una etiqueta <style> en el head o en el body del documento HTML
+	Dentro de la etiqueta <style> se escribe la lista de reglas CSS
+
+    <style>
+    h1 {
+        color:purple;
+        font-size:3em;
+    }
+    ul {
+        list-style-type:square;
+    }
+    </style>
+3.	Estilos en línea: Consiste en aplicar estilos CSS directamente sobre una etiqueta HTML
+	No se utiliza en un selector. No recomendado (Usarlo = 0 en el examen)
+
+    <p style="color:blue;">lorem ipsum</p> | No hay selector, solo propiedades separadas por ";"
