@@ -1,0 +1,31 @@
+table{
+    border-collapse: collapse;
+}
+thead {
+    background-color: aqua;
+
+}
+.bd {
+    background-color: pink;
+}
+.cont {
+    background-color: brown;
+}
+.ing {
+    background-color: cornflowerblue;
+}
+.laMejorClase{
+    background-color: lime;
+}
+.ipe {
+    background-color: orange;
+}
+.sust {
+    background-color: cadetblue;
+}
+.sis {
+    background-color: yellow;
+}
+.java {
+    background-color: lightblue;
+}
