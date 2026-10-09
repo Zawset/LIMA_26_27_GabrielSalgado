@@ -1,0 +1,49 @@
+· Proximidad CSS ·
+    Muchas reglas CSS pueden afectar al mismo elemento.
+    La regla que será aplicada en último lugar (y por lo tanto la que prevalecerá en caso de conflicto)
+    siempre es la más próxima al elemento modificado
+    Más próximo a Menos próximo
+    Estilos en línea - Estilos internos - Estilos externos
+
+· Cascada en CSS ·
+En CSS los estilos se aplican en cascada, esta es:
+	- Los estilos aplicados a elementos en la parte superior del árbol HTML, son heredados por sus hijos.
+    - En un hijo se aplican en primer lugar los estilos de sus ancestros, las propiedades que se definen en su selector
+    no se aplican a sus ancestros, y se sobreescribem las propiedades heredadas con los nuevos valores definidos
+
+· Especificidad en CSS ·
+	- Si dos selectores distintos afectan a la misma etiqueta o elemento, si tiene la misma especificidad
+    prevalece el último que se ha definido en el documento CSS (El que está más abajo)
+    - Si tiene distinta especificidad, da igual el orden, prevalece el más específico (más específico === más concreto o restrictivo)
+
+· Selectores CSS
+	nombreDeEtiqueta {	|
+        				| Selector de etiqueta	
+    }					|
+
+    .nombreDeClase {	|
+        				|	Selector de clase
+    }					|
+
+    #idDeElemento {		|
+						| Selector de id
+    }					|
+
+    * {					|
+						| Selector universal => Aplica estilos a TODOS LOS ELEMENTOS del documento
+    }					| Más específico que aplicar estilos a body o HTML
+
+    Selectores jerárquicos: Aplican estilos a elementos en función a su relación con otors elementos en el árbol HTML
+	(selector = elemento del html seleccionado)
+    
+    selector1 selector2{	|
+							| Selector descendente aplica estilos al selector2, cuando
+    }						| selector2 desciende de selector1 en el árbol HTML (No tiene que ser hijo)
+
+    selector1 > selector2{	|
+							| Selector de hijo que aplica estilos solo a selector2 si es hijo directo
+    }						| de selector1
+
+    selector1 + selector2{	|
+							| Selector de hermano aplica estilos a selector2 solo si es hermano
+    }						| directamente siguiente del selector1	(Más usado en p+p{})
