@@ -1,0 +1,16 @@
+html {
+    background-color: lightgray;
+}
+body {
+    color: red;
+}
+h1 {
+    text-align: center;
+}
+h2 {
+    text-align: end;
+}
+.linea {
+    width: 700px;
+    margin: 20px auto;
+}
