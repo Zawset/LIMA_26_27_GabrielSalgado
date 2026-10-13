@@ -18,11 +18,10 @@ h2 {
 .inicio {
     color: #060;
 }
-.subs {
-    font-weight: bold;
+b {
     font-size: 20px;
 }
-.parentesis {
+i, abbr {
     color: #fff;
     background-color: #000;
     font-style: italic;
