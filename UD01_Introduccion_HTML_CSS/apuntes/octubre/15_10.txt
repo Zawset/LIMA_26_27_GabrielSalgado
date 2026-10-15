@@ -1,0 +1,37 @@
+· FORMULARIOS HTML ·
+Son el elemento principal de HTML para recoger información del usuario.
+Un Formulario agrupa una serie de controles con los que el usuario puede
+interactuar para enviar información a un sitio web.
+
+Etiqueta raíz --> <form method=("get" o "post") action=""> </form>
+
+method --> Indica el método de envío de los datos del Formulario:
+    get: Codifica los valores de los campos del Formulario en la URL,
+    es decir, los nombres y los valores de los campos aparecen visibles
+    en la barra de direcciones del navegador.
+    post: Permite enviar cantidades de datos mayores. La información
+    no se refleja en la URL del navegador. Adecuado para eviar información
+    sensible o con datos adjuntos.
+
+action --> Define el destino que procesará los datos -> Script que recupera los datos
+    y hace algo con ellos
+   
+Controles básicos de formularios
+
+<input type="text", name="nombreDelCampo" > Dibuja una caja de texto
+<input type="number", name="nombreDelCampo" > Dibuja una caja de números
+<input type="password", name="nombreDelCampo" > Dibuja una caja de texto que se llena de "····"
+<input type="date", name="nombreDelCampo" > Dibuja una caja de numeros de formato (DD/MM/AAAA) junto con la posibilidad de abrir un calendario
+<input type="checkbox", name="nombreDelCampo" > Dibuja la caja de verificación [✔]
+<input type="radio", name="nombreDelCampo" > Dibuja una caja de formato (·)
+<input type="file", name="nombreDelCampo" > Dibuja una caja para la subida de archivos
+<input type="submit", name="nombreDelCampo" > Dibuja una caja para el envío del formulario
+
+Forma recomendada de marcar formularios
+
+<label for="idDelCampoDeFormulario">
+	Texto representativo por ejemplo: "Apellidos"
+</label>
+<input type="text" id="apellidos", name="apellidos", placeholder*="Introduce aquí tus apellidos", | *(Texto de ayuda)
+		required="required", Restricciones de entrada de datos (Siguiente clase)>
+
