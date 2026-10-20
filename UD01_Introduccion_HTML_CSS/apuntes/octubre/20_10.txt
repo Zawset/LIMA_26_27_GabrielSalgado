@@ -1,0 +1,13 @@
+·   Expresiones regulares con pattern para campos de texto en formularios  ·
+
+Una expresión regular es un molde que define el formato que debe seguir una cadena de texto
+La expresión regular intercala partes literales que deben aparecer en la cadena con distintas
+formas de comodines. Ejemplo, una expresión regular para palabras de 5 letras que empiezan por A
+A····
+A··· [áéíóú] --> Tengo que marcar si acaba en vocal acentuada + n|s
+                 Tengo que marcar si acaba en vocal aventuada --> A··([áéíóú][ns]  || .[áéíóú])
+                 A.{2} -- Si sabemos cuantos caracteres habrá
+
+Expresión regular de matrícula
+
+    [0-9]{4}[A-Z]{3}

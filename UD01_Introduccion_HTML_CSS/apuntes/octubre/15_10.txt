@@ -26,6 +26,9 @@ Controles básicos de formularios
 <input type="radio", name="nombreDelCampo" > Dibuja una caja de formato (·)
 <input type="file", name="nombreDelCampo" > Dibuja una caja para la subida de archivos
 <input type="submit", name="nombreDelCampo" > Dibuja una caja para el envío del formulario
+<input type="tel", name="nombreDelCampo" > Caja que no exige nada realmente
+<input type="email", name="nombreDelCampo" > Solicita el uso de un @
+<input type="url", name="nombreDelCampo" > exige que el texto incluya http:// o https://
 
 Forma recomendada de marcar formularios
 
@@ -33,5 +36,8 @@ Forma recomendada de marcar formularios
 	Texto representativo por ejemplo: "Apellidos"
 </label>
 <input type="text" id="apellidos", name="apellidos", placeholder*="Introduce aquí tus apellidos", | *(Texto de ayuda)
-		required="required", Restricciones de entrada de datos (Siguiente clase)>
+		required="required", Restricciones de entrada de datos (Siguiente clase), value="Valor por defecto">
+<label>Nombre del campo
+    <input ----/>
+</label>
 

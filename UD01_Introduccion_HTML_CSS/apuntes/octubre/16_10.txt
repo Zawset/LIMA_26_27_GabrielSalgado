@@ -1,0 +1,4 @@
+· Otros controles de entrada de datos ·
+<textarea name="nombre" rows="filas de expansion" cols="columnas de expansion">
+    Valor por defecto del texto
+</textarea>
