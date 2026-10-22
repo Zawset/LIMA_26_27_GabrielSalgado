@@ -1,0 +1,46 @@
+    ·   Selectores CSS: Pseudoclases, selección por atributos y pseudoelementos    ·
+
+Las pseudoclases son selectores CSS que permiten seleccionar elementos del documento
+en función del estado en el que se encuentran.
+
+    Para todos los elementos:
+    
+    :hover --> Selecciona un elemento cuando el cursor se encuentra sobre el
+    Se peude combinar con cualquier otro tipo de selector
+
+    Para enlaces:
+
+    :hover
+    :link --> Estilos predeterminados para enlaces que lo sean (tienen href) 
+    :active --> Enlaces cuando se están clicando
+    :visited --> Enlaces visitados
+
+    Para campos de formulario:
+
+    :required   |
+    :optional   | ---> Se pueden combinar
+    :valid      |
+    :invalid    |
+
+    ·   Selectores por atributo:    ·
+    Permiten seleccionar elementos en los que aparezca un atributo indicando o no su valor
+
+    <blockquote lang="en">lorem</blockquote>    |   *[lang en] (No me dio tiempo a copiar pipipi T_T)
+
+    ·   Pseudoelementos ·
+    Permiten seleccionar partes del documento que no son elementos en si:
+
+    ::first-line --> Representa la primera línea de texto de una etiqueta
+    ::first-letter --> Representa la primera letra de texto de una etiqueta
+
+    Algunos pseudoelementos especiales son:
+    
+    ::root --> Representa el elemento raíz del documento, no se emplea normalmente
+    para aplicar estilos. Se usa para almacenar variables
+    
+    ::root{
+        --color1: red;
+        --color2: yellow;
+        --color3: grey;
+        --espaciado: 0,5em;
+    }
