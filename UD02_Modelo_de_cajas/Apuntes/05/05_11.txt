@@ -1,0 +1,64 @@
+·   MODELO DE CAJAS ·
+
+En HTML cualquier etiqueta se dibuja en el navegador como una caja. Propiedades de las cajas.
+    *Dibujo en libreta*
+
+- Tipos de Elementos -
+
+· Elementos en línea : Ocupan el ancho que necesitan según su contenido. Si el contenido es más ancho que el ancho de la página (viewport)
+    pasan a ocupar una nueva línea.
+    Un elemento en línea puede aparecer dentro de un elemento en bloque o dentro de otro elemento en línea.
+    Como estos elementos "fluyen" dentro de una línea, directamente no puedo manipular su atura, aumentar su anchura aplicando relleno.
+    
+    Ejemplo: b,i,em,strong,abbr,time, span, a, etc.
+
+· Elementos en bloque: Ocupan todo el ancho disponible, aunque su contenido no lo necesite.
+    Un elemento en bloque solo debe incluirse dentro de otro elemento en bloque
+
+    Ejemplo: main, aside, article, section, header, fotter, nav, div, p, h1-h6, blockquote, code, ol, ul, li, dl, dt, etc.
+
+- Atributo display:
+    Permite cambiar la forma en la que se dibuja una etiqueta:
+    
+    Valores:
+        inline: Dibuja en línea
+        block: Dibuja en bloque
+        inline-block: Dibuja en línea, pero permite ajustar el alto y ancho del elemento
+        none: No dibuja nada
+
+- Dimensiones de la caja:
+
+    width: ancho
+    unidades:   %: porcentaje
+                vw: viewport width
+                    100 vw = todo el ancho dibujable de la vetana
+                    50 vw = la mitad del ancho de la vetana
+                px: ancho absoluto en píxeles
+                pc: picas
+                pt: tamaño de fuentes
+                in: pulgadas
+                cm,mm: centímetros o milímetros
+                em: tamaño relativo al ancho de la letra m en la fuente usada en el contenedor padre
+                Por defecto las fuentes se dibujam (<p>) a 16px. 1em=16px 
+                                                                0,5em=8px
+    ··· HTML ···
+    <body>
+    <div class="letra-pequena">
+        <p>Hola</p>
+        
+        <p class= "pequenito">
+        A que no me ves
+        </p>
+    </div>
+    </body>
+      ··· CSS ···
+      .letra-pequena{
+        font-size: 0,5em; /* == 8px */
+      }
+      .pequenito{
+        font-size: 0,5em; /* == 4px */
+      }
+    
+    rem: root em = tamaño relativo en EMs al elemento raíz (Que normalmente, si no decimos otra cosa será 16px)
+    height: altura de la caja (Salvo ·vw· , pasa a ser ·vh·)
+            100vh --> 100% de la altura dibujable de la ventana
