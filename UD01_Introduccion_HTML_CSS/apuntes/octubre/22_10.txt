@@ -44,3 +44,7 @@ en función del estado en el que se encuentran.
         --color3: grey;
         --espaciado: 0,5em;
     }
+
+    ::after     | Selectores para los pseudoelementos
+    ::before    | Que están antes y después de una etiqueta o selector
+                | concreto. Se emplean para crear elementos de diseño CSS sin la necesidad de añadir más etiquetas al contenido
