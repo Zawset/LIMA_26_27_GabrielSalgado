@@ -1,0 +1,27 @@
+·   Función para calcular dimensiones   ·
+    calc: permite operar con magnitudes de dimensiones expresadas en distintas unidades.
+
+    Uso:
+        dic {
+            width: calc(100px [+,-,*,/] 30%);
+        }
+    
+·   Recetario CSS   ·
+    Centrar elementos usando margin
+
+    Centrado horizontal con margin:
+        div{
+            width: 50%;
+            margin:0 auto;
+        }
+·   Centrar verticalmente con margin y calc    ·
+    Los documentos HTML estan diseñados para presentarse con scroll en el navegador. Centrar elementos verticalmente implica desperdiciar
+    espacio vertical, por esta razón las propiedades CSS mo permiten hacer esta operación de manera directa
+
+    Premisas para poder centrar verticalmente:
+        1º: El contenedor padre en el que vamos a centrar tiene que tener una altura definida
+        2º: La caja que vamos a centrar tiene que tener altura definida
+    Operaciones:
+        1º: Calcular el espacio vertical restante disponible en el contenedor padre
+        2º: Dividir entre 2 el espacio disponible y asignarlo como margen superior
+            margin-top: calc(calc(alturapadre - alturacaja)/2); 
