@@ -1,0 +1,40 @@
+·   POSICIONAMIENTO ·
+
+Por defecto el navegador dibuj todas las cajas con posicionamiento normal. Esto es:
+    Elementos en línea: Ocupar solo el ancho que necesita y fluye en una línea
+    
+    Elementos en bloque: Ocupar todo el ancho, y se muestra unos bajo otros
+
+    Elementos inlline-block: Viven en una línea, pero permiten ajustar sus dimensiones
+
+La forma en la que se dibujan los elementos se puede manipular con la propiedad position
+
+position:
+    static : posicionamiento normal ya explicado
+    relative : permite posicionar un elemento respecto a la ubicación original en la se encuentra.
+                El espacio original que ocupaba se reserva y no es ocupado por otros elementos. En 
+                su nueva ubicación puede solaparse con otros elementos
+
+                ---------------
+                |1.           |
+                |2.           |
+                |3.           |
+                |             |             
+                ---------------
+                       ||
+                       \/
+                ---------------             div{
+                |1.           |
+                |             |             width: 20%;
+                |3. 2.        |   ----->    border: 1px solid black;
+                |             |             }
+                ---------------             div:nth-child(2){
+                                                position: relative;
+                                                left: 100px;
+                                                top: 20px
+                                            }
+
+    absolute : Posiciona un elemento respecto a los límites del primer contenedor padre en el que se 
+    encuentre que tenga posicionamiento distinto de relativo o normal. Si no hay ninguno, Posiciona el elemento
+    respecto al body. El espacio original ocupado por el elemento puede ser ocupado por otros. Se dice que el
+    elemento sale del flujo normal del documento

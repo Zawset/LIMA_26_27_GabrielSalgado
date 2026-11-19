@@ -24,4 +24,4 @@
     Operaciones:
         1º: Calcular el espacio vertical restante disponible en el contenedor padre
         2º: Dividir entre 2 el espacio disponible y asignarlo como margen superior
-            margin-top: calc(calc(alturapadre - alturacaja)/2); 
+            margin-top: calc(calc(alturapadre - alturacaja)/2);
