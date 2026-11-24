@@ -1,0 +1,18 @@
+Position: fixed: Fija una caja a una posición respecto al viewport.
+La caja, al igual que en el posicionamiento absoluto, deja de ocupar su espacio original.
+Al hacer scroll, la caja permanece fija en las coordenadas proporcionadas.
+
+Position: sticky: Es una mezcla de posicionamiento relativo y fijo. La caja aparece
+en su posición original (sin reubicarse), hasta que al hacer scroll, esta alcanza alguno
+de los limites del viewport. En ese momento se queda fija en la posición indicada
+
+Float
+Propiedad que permite ajustar el comportamiento de elementos inline-block
+(tipicamente imágenes o tablas) respecto al resto de texto que los rodea.
+
+float: left - Hace que el elemenmto de coloque a la izquierda y el resto del texto fluya por su derecha
+
+float: right - Hace que el elemento se coloque a la derecha y el resto del texto fluya por su izquierda
+
+clear . De manera conjunta los elementos float pueden ir acompañados de otros elementos que tengam la propiedad clear, esta
+sirve para evitar que los elementos en los que se aplica se peguen a los elementos flotantes
